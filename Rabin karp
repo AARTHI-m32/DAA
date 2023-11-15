@@ -44,8 +44,8 @@ void search(char pat[], char txt[], int q)
 
 int main()
 {
-	char txt[] = "GEEKS FOR GEEKS";
-	char pat[] = "GEEK";
+	char txt[] = "Rabin Karp Algorithm";
+	char pat[] = "Algor";
 
 	int q = INT_MAX;
 
