@@ -50,7 +50,7 @@ void computeLPSArray(char* pat, int M, int* lps)
 			lps[i] = len;
 			i++;
 		}
-		else // (pat[i] != pat[len])
+		else 
 		{
 	
 			if (len != 0) {
