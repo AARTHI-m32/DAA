@@ -4,14 +4,14 @@ using namespace std;
  
 int partition (int a[], int start, int end)  
 {  
-    int pivot = a[end]; // pivot element  
+    int pivot = a[end]; 
     int i = (start - 1);  
   
     for (int j = start; j <= end - 1; j++)  
     {  
         if (a[j] < pivot)  
         {  
-            i++; // increment index of smaller element  
+            i++;
             int t = a[i];  
             a[i] = a[j];  
             a[j] = t;  
@@ -28,7 +28,7 @@ void quick(int a[], int start, int end)
 {  
     if (start < end)  
     {  
-        int p = partition(a, start, end);  //p is the partitioning index  
+        int p = partition(a, start, end);    
         quick(a, start, p - 1);  
         quick(a, p + 1, end);  
     }  
